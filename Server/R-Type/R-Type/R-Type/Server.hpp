@@ -7,11 +7,13 @@
 #include	"Socket\WinSocket.hpp"
 #endif
 
+#include	"ThreadPool_.hpp"
 #include	"Game.hpp"
 #include	"Player.hpp"
 #include	"Protocol.hpp"
 #include	"Command.hpp"
 
+#include	<stdexcept>
 #include	<vector>
 
 class	Command;
@@ -19,9 +21,6 @@ class	Command;
 class	Server
 {
 public:
-	Server(void);
-	~Server(void);
-
 	void	init(void);
 	void	running(void);
 
@@ -35,7 +34,16 @@ public:
 	void	deletePlayer(const Player *p);
 	void	deleteGame(const Game *g);
 
+	static Server	*getInstance(void);
+	static void		kill(void);
 private:
+	Server(void);
+	~Server(void);
+
+	static Server	*_singleton;
+
+	IMutex		*serverMutex;
+	ThreadPool_	*threadPool;
 	ISocket		*socket;
 	std::vector<Player *>	players;
 	std::vector<Game *>		games;

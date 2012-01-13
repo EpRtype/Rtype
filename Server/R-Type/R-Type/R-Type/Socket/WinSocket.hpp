@@ -24,6 +24,7 @@ public:
   virtual receive RecvData(int len, int flags);
   virtual bool SendData(in_addr ip, int port, char *buf, int len, int flags);
 };
+
 #endif
 
 #endif		/* WIN_SOCKET_HPP */

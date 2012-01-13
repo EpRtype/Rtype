@@ -3,15 +3,23 @@
 
 #include "Server.hpp"
 
+struct	_command
+{
+	RTProtocol::Header *h;
+	receive	r;
+};
+
 class	Server;
 
 class	Command
 {
 public:
-	Command(Server *s);
-	~Command(void);
-
+static int inc;
 	void	FindCommand(const RTProtocol::Header *h, const receive& rBody);
+
+	static void	Test(void *param);
+	static Command	*getInstance(void);
+	static void			kill(void);
 
 private:
 	void	RecvConnection(const receive& rBody);
@@ -37,6 +45,11 @@ private:
 	char	*getNewHeader(uint8_t command, int32_t size);
 
 	Server	*s;
+	static Command	*_singleton;
+
+	Command(void);
+	~Command(void);
+
 };
 
 #endif		/* _COMMAND_HPP_ */

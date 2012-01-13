@@ -13,14 +13,14 @@ class		WinThread : public IThread
 {
 public:
 		WinThread();
-	   ~WinThread();
+		~WinThread();
 
-  void		create(void *(*start_routine)(void *), void *_arg);
-  void		destroy();
-  void		join();
-  //  void		start();
-  //  void		suspend();
-  //  void		resume();
+	void		create(void *(*start_routine)(void *), void *_arg);
+	void		destroy();
+	void		join();
+	void		start();
+    void		suspend();
+	void		resume();
 
 private:
   IMutex	*mutex;

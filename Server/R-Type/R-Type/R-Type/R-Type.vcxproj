@@ -20,6 +20,7 @@
     <ClInclude Include="Socket\ISocket.hpp" />
     <ClInclude Include="Socket\UnixSocket.hpp" />
     <ClInclude Include="Socket\WinSocket.hpp" />
+    <ClInclude Include="ThreadPool_.hpp" />
     <ClInclude Include="Thread\IMutex.hpp" />
     <ClInclude Include="Thread\IThread.hpp" />
     <ClInclude Include="Thread\UnixMutex.hpp" />
@@ -35,6 +36,7 @@
     <ClCompile Include="Server.cpp" />
     <ClCompile Include="Socket\UnixSocket.cpp" />
     <ClCompile Include="Socket\WinSocket.cpp" />
+    <ClCompile Include="ThreadPool_.cpp" />
     <ClCompile Include="Thread\UnixMutex.cpp" />
     <ClCompile Include="Thread\UnixThread.cpp" />
     <ClCompile Include="Thread\WinMutex.cpp" />
