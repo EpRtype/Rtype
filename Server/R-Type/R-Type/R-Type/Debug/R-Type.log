@@ -1,9 +1,86 @@
-﻿Build started 1/19/2012 11:00:39 AM.
-     1>Project "C:\Users\xMalloc\Desktop\R-Type\Project\Project\R-Type\Rtype\Server\R-Type\R-Type\R-Type\R-Type.vcxproj" on node 2 (clean target(s)).
-     1>_PrepareForClean:
-         Deleting file "Debug\R-Type.lastbuildstate".
-     1>Done Building Project "C:\Users\xMalloc\Desktop\R-Type\Project\Project\R-Type\Rtype\Server\R-Type\R-Type\R-Type\R-Type.vcxproj" (clean target(s)).
+﻿Build started 19/01/2012 13:01:19.
+     1>Project "C:\Users\FACAX\Desktop\git rtype\Rtype\Server\R-Type\R-Type\R-Type\R-Type.vcxproj" on node 2 (build target(s)).
+     1>InitializeBuildStatus:
+         Creating "Debug\R-Type.unsuccessfulbuild" because "AlwaysCreate" was specified.
+       ClCompile:
+         C:\Program Files (x86)\Microsoft Visual Studio 10.0\VC\bin\CL.exe /c /ZI /nologo /W3 /WX- /Od /Oy- /D _MBCS /Gm /EHsc /RTC1 /MDd /GS /fp:precise /Zc:wchar_t /Zc:forScope /Fo"Debug\\" /Fd"Debug\vc100.pdb" /Gd /TP /analyze- /errorReport:prompt AutoMutex.cpp Command.cpp DLL\LinuxDynLib.cpp DLL\WindowsDynLib.cpp Game.cpp main.cpp Player.cpp Server.cpp Socket\UnixSocket.cpp Socket\WinSocket.cpp ThreadPool_.cpp Thread\UnixThread.cpp Thread\WinThread.cpp
+         WinThread.cpp
+         UnixThread.cpp
+         ThreadPool_.cpp
+         WinSocket.cpp
+         UnixSocket.cpp
+         Server.cpp
+     1>c:\users\facax\desktop\git rtype\rtype\server\r-type\r-type\r-type\server.cpp(388): warning C4244: '=' : conversion from '__time64_t' to 'long', possible loss of data
+         Player.cpp
+         Game.cpp
+         WindowsDynLib.cpp
+     1>c:\program files (x86)\microsoft visual studio 10.0\vc\include\xutility(2144): warning C4244: '=' : conversion from 'const wchar_t' to 'char', possible loss of data
+                 c:\program files (x86)\microsoft visual studio 10.0\vc\include\xutility(2165) : see reference to function template instantiation '_OutIt std::_Copy_impl<_InIt,_OutIt>(_InIt,_InIt,_OutIt,std::_Nonscalar_ptr_iterator_tag)' being compiled
+                 with
+                 [
+                     _OutIt=char *,
+                     _InIt=const wchar_t *
+                 ]
+                 c:\program files (x86)\microsoft visual studio 10.0\vc\include\xutility(2196) : see reference to function template instantiation '_OutIt std::_Copy_impl<_InIt,char*>(_InIt,_InIt,_OutIt)' being compiled
+                 with
+                 [
+                     _OutIt=char *,
+                     _InIt=const wchar_t *
+                 ]
+                 c:\program files (x86)\microsoft visual studio 10.0\vc\include\xutility(2206) : see reference to function template instantiation '_OutIt std::_Copy_impl<_InIt,_OutIt>(_InIt,_InIt,_OutIt,std::random_access_iterator_tag,std::random_access_iterator_tag)' being compiled
+                 with
+                 [
+                     _OutIt=std::_String_iterator<char,std::char_traits<char>,std::allocator<char>>,
+                     _InIt=const wchar_t *
+                 ]
+                 c:\program files (x86)\microsoft visual studio 10.0\vc\include\xutility(2227) : see reference to function template instantiation '_OutIt std::_Copy_impl<const wchar_t*,_OutIt>(_InIt,_InIt,_OutIt,std::tr1::true_type)' being compiled
+                 with
+                 [
+                     _OutIt=std::_String_iterator<char,std::char_traits<char>,std::allocator<char>>,
+                     _InIt=const wchar_t *
+                 ]
+                 c:\users\facax\desktop\git rtype\rtype\server\r-type\r-type\r-type\dll\windowsdynlib.cpp(15) : see reference to function template instantiation '_OutIt std::copy<std::_String_const_iterator<_Elem,_Traits,_Alloc>,std::_String_iterator<char,std::char_traits<char>,std::allocator<_Ty>>>(_InIt,_InIt,_OutIt)' being compiled
+                 with
+                 [
+                     _OutIt=std::_String_iterator<char,std::char_traits<char>,std::allocator<char>>,
+                     _Elem=wchar_t,
+                     _Traits=std::char_traits<wchar_t>,
+                     _Alloc=std::allocator<wchar_t>,
+                     _Ty=char,
+                     _InIt=std::_String_const_iterator<wchar_t,std::char_traits<wchar_t>,std::allocator<wchar_t>>
+                 ]
+         LinuxDynLib.cpp
+         Command.cpp
+         AutoMutex.cpp
+         Generating Code...
+         Compiling...
+         main.cpp
+         Generating Code...
+       Link:
+         C:\Program Files (x86)\Microsoft Visual Studio 10.0\VC\bin\link.exe /ERRORREPORT:PROMPT /OUT:"C:\Users\FACAX\Desktop\git rtype\Rtype\Server\R-Type\R-Type\Debug\R-Type.exe" /NOLOGO kernel32.lib user32.lib gdi32.lib winspool.lib comdlg32.lib advapi32.lib shell32.lib ole32.lib oleaut32.lib uuid.lib odbc32.lib odbccp32.lib /MANIFEST /ManifestFile:"Debug\R-Type.exe.intermediate.manifest" /MANIFESTUAC:"level='asInvoker' uiAccess='false'" /DEBUG /PDB:"C:\Users\FACAX\Desktop\git rtype\Rtype\Server\R-Type\R-Type\Debug\R-Type.pdb" /TLBID:1 /DYNAMICBASE /NXCOMPAT /IMPLIB:"C:\Users\FACAX\Desktop\git rtype\Rtype\Server\R-Type\R-Type\Debug\R-Type.lib" /MACHINE:X86 Debug\AutoMutex.obj
+         Debug\Command.obj
+         Debug\LinuxDynLib.obj
+         Debug\WindowsDynLib.obj
+         Debug\Game.obj
+         Debug\main.obj
+         Debug\Player.obj
+         Debug\Server.obj
+         Debug\UnixSocket.obj
+         Debug\WinSocket.obj
+         Debug\ThreadPool_.obj
+         Debug\UnixMutex.obj
+         Debug\UnixThread.obj
+         Debug\WinMutex.obj
+         Debug\WinThread.obj
+         LINK : C:\Users\FACAX\Desktop\git rtype\Rtype\Server\R-Type\R-Type\Debug\R-Type.exe not found or not built by the last incremental link; performing full link
+         R-Type.vcxproj -> C:\Users\FACAX\Desktop\git rtype\Rtype\Server\R-Type\R-Type\Debug\R-Type.exe
+       Manifest:
+         C:\Program Files (x86)\Microsoft SDKs\Windows\v7.0A\bin\mt.exe /nologo /verbose /outputresource:"C:\Users\FACAX\Desktop\git rtype\Rtype\Server\R-Type\R-Type\Debug\R-Type.exe;#1" /manifest "Debug\R-Type.exe.intermediate.manifest"
+       FinalizeBuildStatus:
+         Deleting file "Debug\R-Type.unsuccessfulbuild".
+         Touching "Debug\R-Type.lastbuildstate".
+     1>Done Building Project "C:\Users\FACAX\Desktop\git rtype\Rtype\Server\R-Type\R-Type\R-Type\R-Type.vcxproj" (build target(s)).
 
 Build succeeded.
 
-Time Elapsed 00:00:00.27
+Time Elapsed 00:00:13.88
